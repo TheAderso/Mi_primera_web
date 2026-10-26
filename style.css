@@ -1,0 +1,91 @@
+/* Diseño general */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f7fa;
+    color: #333;
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    line-height: 1.6;
+}
+
+/* Títulos */
+h1, h2 {
+    color: #1e293b;
+}
+
+h1 {
+    font-size: 32px;
+}
+
+h2 {
+    font-size: 22px;
+    margin-top: 30px;
+    border-bottom: 2px solid #dbeafe;
+    padding-bottom: 5px;
+}
+
+/* Imagen */
+img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid white;
+}
+
+/* Párrafos */
+p {
+    color: #64748b;
+}
+
+/* Tabla */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+th {
+    background-color: #2563eb;
+    color: white;
+}
+
+tr:last-child td {
+    border-bottom: none;
+}
+
+/* Adaptación para celulares */
+@media (max-width: 600px) {
+    body {
+        margin: 15px;
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 26px;
+    }
+
+    table {
+        font-size: 14px;
+    }
+
+    th, td {
+        padding: 8px;
+    }
+}
+a {
+    color: #2563eb;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #1d4ed8;
+    text-decoration: underline;
+}
