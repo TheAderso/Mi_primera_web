@@ -1,91 +1,223 @@
-/* Diseño general */
+/* =================================
+   HOJA DE VIDA - VINO TINTO
+   ================================= */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    background-color: #f3e4e6;
+}
+
 body {
     font-family: Arial, sans-serif;
-    background-color: #f5f7fa;
-    color: #333;
-    max-width: 800px;
-    margin: 40px auto;
-    padding: 20px;
-    line-height: 1.6;
+    background-color: #ffffff;
+    color: #38252a;
+
+    max-width: 850px;
+    margin: 35px auto;
+    padding: 35px;
+
+    line-height: 1.7;
+    border-top: 12px solid #722f37;
+    box-shadow: 0 5px 25px #722f372e;
 }
 
-/* Títulos */
-h1, h2 {
-    color: #1e293b;
-}
+/* ENCABEZADO PRINCIPAL */
 
 h1 {
-    font-size: 32px;
+    background-color: #722f37;
+    color: #ffffff;
+
+    text-align: center;
+    font-size: 34px;
+
+    padding: 25px 15px;
+    margin: 0 0 25px;
+
+    border-radius: 8px;
 }
+
+/* TÍTULOS DE LAS SECCIONES */
 
 h2 {
+    background-color: #722f37;
+    color: #ffffff;
+
     font-size: 22px;
+    padding: 10px 15px;
     margin-top: 30px;
-    border-bottom: 2px solid #dbeafe;
-    padding-bottom: 5px;
+
+    border-left: 7px solid #c58b94;
+    border-radius: 4px;
 }
 
-/* Imagen */
+h3 {
+    color: #722f37;
+    font-size: 19px;
+}
+
+/* FOTOGRAFÍA */
+
 img {
-    width: 150px;
-    height: 150px;
+    display: block;
+
+    width: 155px;
+    height: 155px;
+
     object-fit: cover;
     border-radius: 50%;
-    border: 4px solid white;
+
+    border: 5px solid #722f37;
+
+    margin: 20px auto;
+
+    box-shadow: 0 4px 15px #722f3740;
 }
 
-/* Párrafos */
+/* PÁRRAFOS */
+
 p {
-    color: #64748b;
+    color: #665157;
+    font-size: 16px;
 }
 
-/* Tabla */
+/* INFORMACIÓN IMPORTANTE */
+
+strong {
+    color: #722f37;
+}
+
+/* LISTAS */
+
+ul,
+ol {
+    padding-left: 25px;
+}
+
+li {
+    margin-bottom: 8px;
+}
+
+li::marker {
+    color: #722f37;
+}
+
+/* TABLAS */
+
 table {
     width: 100%;
     border-collapse: collapse;
-    background-color: white;
+    margin: 20px 0;
+
+    background-color: #ffffff;
+    border: 2px solid #722f37;
 }
 
-th, td {
-    padding: 12px;
-    text-align: left;
-    border-bottom: 1px solid #e2e8f0;
-}
+/* ENCABEZADO DE LA TABLA */
 
 th {
-    background-color: #2563eb;
-    color: white;
+    background-color: #722f37;
+    color: #ffffff;
+
+    padding: 13px;
+    text-align: left;
 }
 
-tr:last-child td {
-    border-bottom: none;
+/* CONTENIDO DE LA TABLA */
+
+td {
+    padding: 12px;
+    border-bottom: 1px solid #d9bfc4;
 }
 
-/* Adaptación para celulares */
-@media (max-width: 600px) {
-    body {
-        margin: 15px;
-        padding: 10px;
-    }
+/* FILAS ROSA CLARO */
 
-    h1 {
-        font-size: 26px;
-    }
-
-    table {
-        font-size: 14px;
-    }
-
-    th, td {
-        padding: 8px;
-    }
+tbody tr:nth-child(even) {
+    background-color: #f3e4e6;
 }
+
+/* EFECTO AL PASAR EL MOUSE */
+
+tbody tr:hover {
+    background-color: #e5c6cc;
+}
+
+/* ENLACES */
+
 a {
-    color: #2563eb;
-    text-decoration: none;
+    color: #722f37;
+    font-weight: bold;
+    text-decoration: underline;
+    text-decoration-color: #c58b94;
 }
 
 a:hover {
-    color: #1d4ed8;
-    text-decoration: underline;
+    color: #a34b59;
+}
+
+/* BOTONES */
+
+button {
+    background-color: #722f37;
+    color: #ffffff;
+
+    padding: 12px 22px;
+    border: none;
+    border-radius: 6px;
+
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #4a1720;
+}
+
+/* CAMPOS DE FORMULARIO */
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+
+    border: 1px solid #c58b94;
+    border-radius: 5px;
+    background-color: #fffafa;
+
+    font-size: 15px;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: 2px solid #722f37;
+}
+
+/* CELULARES */
+
+@media screen and (max-width: 600px) {
+    body {
+        margin: 10px;
+        padding: 18px;
+    }
+
+    h1 {
+        font-size: 27px;
+    }
+
+    h2 {
+        font-size: 19px;
+    }
+
+    table {
+        font-size: 13px;
+    }
+
+    th,
+    td {
+        padding: 8px;
+    }
 }
