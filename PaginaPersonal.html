@@ -1,59 +1,400 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
-<head>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+            name="description"
+            content="Portafolio personal de Ayder: inteligencia artificial, algoritmia y Rueda Libre."
+        />
+        <meta name="theme-color" content="#110d0e" />
+        <title>Ayder | Portafolio</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <!-- Barra superior: identidad del sitio y navegación entre secciones. -->
+        <header class="site-header">
+            <a
+                class="wordmark"
+                href="#inicio"
+                aria-label="Ayder, volver al inicio"
+                >A<span>.</span></a
+            >
+            <nav class="main-nav" aria-label="Navegación principal">
+                <a href="#sobre-mi">Sobre mí</a>
+                <a href="#proyectos">Proyectos</a>
+                <a href="#contacto">Contacto</a>
+            </nav>
+            <a class="header-link" href="#proyectos"
+                >Explorar trabajo <span aria-hidden="true">↘</span></a
+            >
+        </header>
 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pagina Personal</title>
-    <link rel="stylesheet" href="style.css">
+        <main>
+            <!-- Presentación principal: foto, descripción y accesos al portafolio. -->
+            <section
+                class="hero page-shell"
+                id="inicio"
+                aria-labelledby="hero-title"
+            >
+                <div class="hero-copy">
+                    <p class="eyebrow">
+                        <span class="status-dot" aria-hidden="true"></span>
+                        Portafolio personal · Tecnología y código
+                    </p>
+                    <h1 id="hero-title">
+                        Ideas que toman forma <span>en código.</span>
+                    </h1>
+                    <p class="hero-description">
+                        Hola, soy Ayder. Exploro la inteligencia artificial, la
+                        algoritmia y proyectos que conectan la tecnología con el
+                        mundo real.
+                    </p>
+                    <div class="hero-actions">
+                        <a class="button button-primary" href="#proyectos"
+                            >Ver proyectos <span aria-hidden="true">↓</span></a
+                        >
+                        <!-- Cambia esta URL por la dirección de tu perfil personal de GitHub. -->
+                        <a
+                            class="button button-quiet"
+                            href="https://github.com/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            >GitHub <span aria-hidden="true">↗</span></a
+                        >
+                    </div>
+                    <div class="hero-topics" aria-label="Temas principales">
+                        <span>Inteligencia artificial</span>
+                        <span>Algoritmia I · II · III</span>
+                        <span>Rueda Libre</span>
+                    </div>
+                </div>
+                <div class="hero-portrait-wrap">
+                    <div class="portrait-frame">
+                        <img
+                            class="hero-portrait"
+                            src="ayder.jpg"
+                            alt="Retrato de Ayder"
+                        />
+                    </div>
+                    <span class="portrait-caption"
+                        >Aprender · construir · compartir</span
+                    >
+                    <span class="portrait-index" aria-hidden="true"
+                        >01 / 03</span
+                    >
+                </div>
+                <a class="scroll-cue" href="#sobre-mi"
+                    ><span aria-hidden="true">↓</span> Desliza para conocer
+                    más</a
+                >
+            </section>
 
-</head>
-<body>
- <h1>Bienvenido a mi Página Personal</h1>
- <img src="ayder.jpg" alt="Imagen de perfil" width="200">
+            <!-- Presentación breve: contexto personal sin inventar experiencia profesional. -->
+            <section
+                class="about-section page-shell"
+                id="sobre-mi"
+                aria-labelledby="about-title"
+            >
+                <div class="section-label">
+                    <span>01</span> Un poco de contexto
+                </div>
+                <div class="about-content">
+                    <h2 id="about-title">
+                        Curiosidad por entender
+                        <em>cómo funcionan las cosas.</em>
+                    </h2>
+                    <p>
+                        Me interesa la tecnología como una herramienta para
+                        pensar, resolver problemas y crear. Aquí reúno mis áreas
+                        de aprendizaje y proyectos para ir mostrando lo que voy
+                        construyendo.
+                    </p>
+                </div>
+                <div class="about-aside" aria-label="Áreas de interés">
+                    <div>
+                        <span class="aside-number">01</span
+                        ><span>Inteligencia artificial</span>
+                    </div>
+                    <div>
+                        <span class="aside-number">02</span
+                        ><span>Pensamiento algorítmico</span>
+                    </div>
+                    <div>
+                        <span class="aside-number">03</span
+                        ><span>Rueda Libre</span>
+                    </div>
+                </div>
+            </section>
 
- <p>Hola, soy Ayder, y esta es mi página personal donde comparto información sobre mí, mis intereses y proyectos.</p>
- <h2>Sobre mí</h2>
- <p>Soy un apasionado de la tecnología y la programación. Me encanta aprender cosas nuevas y enfrentar desafíos que me permitan crecer profesionalmente.</p>
- <h2>Intereses</h2>
- <table>
-         <tr>
-         <th>Interés</th>   
-         <th>Descripción</th>
-     </tr>
-     <tr>
-         <td>Desarrollo web</td>
-         <td>Me gusta crear sitios web y aplicaciones interactivas utilizando tecnologías modernas.</td>
-     </tr>
-     <tr>
-         <td>AI</td>
-         <td>Estoy interesado en el aprendizaje automático y cómo se puede aplicar para resolver problemas del mundo real.</td>
-     </tr>
-     <tr>
-         <td>Videojuegos</td>
-         <td>Disfruto jugar y también explorar el desarrollo de videojuegos como una forma de expresión creativa.</td>
-     </tr>
-     <tr>
-         <td>Viajar</td>
-         <td>Me encanta viajar y aprender sobre diferentes culturas, lo que me ayuda a ampliar mi perspectiva del mundo.</td>
-     </tr>
-    </table>
- <h2>Proyectos</h2>
- <p>Actualmente estoy trabajando en varios proyectos de desarrollo web. Puedes encontrar más información sobre mis proyectos en mi perfil de GitHub.</p>
- <h2>Mis datos de contacto</h2>
+            <!-- Portafolio: botones para filtrar los proyectos por tema. -->
+            <section
+                class="projects-section"
+                id="proyectos"
+                aria-labelledby="projects-title"
+            >
+                <div class="page-shell">
+                    <div class="projects-heading">
+                        <div>
+                            <div class="section-label">
+                                <span>02</span> Selección de temas
+                            </div>
+                            <h2 id="projects-title">
+                                Proyectos <em>y exploraciones.</em>
+                            </h2>
+                        </div>
+                        <p>
+                            Un espacio para reunir proyectos, ejercicios y
+                            aprendizajes.
+                        </p>
+                    </div>
 
-<p>
-    Correo:
-    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=ayderarrieta21@gmail.com" target="_blank">
-        ayderarrieta21@gmail.com
-    </a>
-</p>
-<p>
-    WhatsApp:
-    <a href="https://wa.me/573045993026" target="_blank">
-        3045993026
-    </a>
-</p>
+                    <div
+                        class="project-filters"
+                        role="group"
+                        aria-label="Filtrar proyectos por categoría"
+                    >
+                        <button
+                            class="filter-button is-active"
+                            type="button"
+                            data-filter="all"
+                            aria-pressed="true"
+                        >
+                            Todos <span>05</span>
+                        </button>
+                        <button
+                            class="filter-button"
+                            type="button"
+                            data-filter="ia"
+                            aria-pressed="false"
+                        >
+                            IA
+                        </button>
+                        <button
+                            class="filter-button"
+                            type="button"
+                            data-filter="algoritmia"
+                            aria-pressed="false"
+                        >
+                            Algoritmia
+                        </button>
+                        <button
+                            class="filter-button"
+                            type="button"
+                            data-filter="rueda-libre"
+                            aria-pressed="false"
+                        >
+                            Rueda Libre
+                        </button>
+                    </div>
 
-</body>
+                    <!-- Las tarjetas se muestran u ocultan según la categoría elegida. -->
+                    <div class="project-grid" id="project-grid">
+                        <article
+                            class="project-card project-card-featured"
+                            data-category="ia"
+                        >
+                            <div class="project-card-top">
+                                <span class="project-number">01</span
+                                ><span class="project-tag"
+                                    >Inteligencia artificial</span
+                                >
+                            </div>
+                            <div class="project-card-body">
+                                <p class="project-kicker">
+                                    Área de exploración
+                                </p>
+                                <h3>Inteligencia artificial</h3>
+                                <p>
+                                    Ideas, pruebas y proyectos para explorar
+                                    cómo la IA puede ayudar a resolver
+                                    problemas.
+                                </p>
+                            </div>
+                            <span class="project-arrow" aria-hidden="true"
+                                >↗</span
+                            >
+                        </article>
+                        <article
+                            class="project-card"
+                            data-category="algoritmia"
+                        >
+                            <div class="project-card-top">
+                                <span class="project-number">02</span
+                                ><span class="project-tag">Algoritmia</span>
+                            </div>
+                            <div class="project-card-body">
+                                <p class="project-kicker">
+                                    Fundamentos · Nivel 01
+                                </p>
+                                <h3>Algoritmia I</h3>
+                                <p>
+                                    Primeros pasos en lógica, estructuras y
+                                    resolución ordenada de problemas.
+                                </p>
+                            </div>
+                            <span class="project-arrow" aria-hidden="true"
+                                >↗</span
+                            >
+                        </article>
+                        <article
+                            class="project-card"
+                            data-category="algoritmia"
+                        >
+                            <div class="project-card-top">
+                                <span class="project-number">03</span
+                                ><span class="project-tag">Algoritmia</span>
+                            </div>
+                            <div class="project-card-body">
+                                <p class="project-kicker">
+                                    Práctica · Nivel 02
+                                </p>
+                                <h3>Algoritmia II</h3>
+                                <p>
+                                    Ejercicios y conceptos para seguir
+                                    fortaleciendo el pensamiento computacional.
+                                </p>
+                            </div>
+                            <span class="project-arrow" aria-hidden="true"
+                                >↗</span
+                            >
+                        </article>
+                        <article
+                            class="project-card"
+                            data-category="algoritmia"
+                        >
+                            <div class="project-card-top">
+                                <span class="project-number">04</span
+                                ><span class="project-tag">Algoritmia</span>
+                            </div>
+                            <div class="project-card-body">
+                                <p class="project-kicker">
+                                    Profundización · Nivel 03
+                                </p>
+                                <h3>Algoritmia III</h3>
+                                <p>
+                                    Retos para explorar soluciones más
+                                    estructuradas y eficientes.
+                                </p>
+                            </div>
+                            <span class="project-arrow" aria-hidden="true"
+                                >↗</span
+                            >
+                        </article>
+                        <article
+                            class="project-card project-card-wide"
+                            data-category="rueda-libre"
+                        >
+                            <div class="project-card-top">
+                                <span class="project-number">05</span
+                                ><span class="project-tag">Proyecto</span>
+                            </div>
+                            <div class="project-card-body">
+                                <p class="project-kicker">Trabajo en curso</p>
+                                <h3>Rueda Libre</h3>
+                                <p>
+                                    Un espacio para presentar el proyecto, su
+                                    propósito y los avances que vaya teniendo.
+                                </p>
+                            </div>
+                            <span class="project-arrow" aria-hidden="true"
+                                >↗</span
+                            >
+                        </article>
+                    </div>
+                    <p
+                        class="filter-status"
+                        id="filter-status"
+                        aria-live="polite"
+                    >
+                        Mostrando todos los temas.
+                    </p>
+                </div>
+            </section>
+
+            <!-- Contacto: enlaces directos al correo y WhatsApp existentes. -->
+            <section
+                class="contact-section page-shell"
+                id="contacto"
+                aria-labelledby="contact-title"
+            >
+                <div class="section-label"><span>03</span> Hablemos</div>
+                <div class="contact-content">
+                    <h2 id="contact-title">
+                        ¿Construimos <em>algo interesante?</em>
+                    </h2>
+                    <p>
+                        Estoy disponible para conversar sobre tecnología, ideas
+                        y proyectos.
+                    </p>
+                    <div class="contact-links">
+                        <a href="mailto:ayderarrieta21@gmail.com"
+                            >ayderarrieta21@gmail.com
+                            <span aria-hidden="true">↗</span></a
+                        >
+                        <a
+                            href="https://wa.me/573045993026"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            >WhatsApp <span aria-hidden="true">↗</span></a
+                        >
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Pie de página: cierre e indicador de autoría. -->
+        <footer class="site-footer page-shell">
+            <a class="wordmark" href="#inicio" aria-label="Volver al inicio"
+                >A<span>.</span></a
+            >
+            <p>Diseñado y compartido por Ayder.</p>
+            <a href="#inicio">Volver arriba ↑</a>
+        </footer>
+
+        <!-- Interacción: activa el filtro elegido y anuncia el resultado a lectores de pantalla. -->
+        <script>
+            const filterButtons = document.querySelectorAll(".filter-button");
+            const projectCards = document.querySelectorAll(".project-card");
+            const filterStatus = document.querySelector("#filter-status");
+
+            filterButtons.forEach((button) => {
+                button.addEventListener("click", () => {
+                    const selectedFilter = button.dataset.filter;
+                    let visibleCount = 0;
+
+                    filterButtons.forEach((filterButton) => {
+                        const isSelected = filterButton === button;
+                        filterButton.classList.toggle("is-active", isSelected);
+                        filterButton.setAttribute(
+                            "aria-pressed",
+                            String(isSelected),
+                        );
+                    });
+
+                    projectCards.forEach((card) => {
+                        const isVisible =
+                            selectedFilter === "all" ||
+                            card.dataset.category === selectedFilter;
+                        card.hidden = !isVisible;
+                        visibleCount += Number(isVisible);
+                    });
+
+                    const selectedLabel = button.textContent
+                        .trim()
+                        .replace(/\s+\d+$/, "");
+                    filterStatus.textContent =
+                        selectedFilter === "all"
+                            ? "Mostrando todos los temas."
+                            : `Mostrando ${visibleCount} ${visibleCount === 1 ? "resultado" : "resultados"} de ${selectedLabel}.`;
+                });
+            });
+        </script>
+    </body>
 </html>
